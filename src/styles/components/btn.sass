@@ -1,0 +1,64 @@
+.btn
+  font-size: 1rem
+  background-color: transparent
+  @media screen and (max-width: $mobile)
+    font-size: 1.3rem
+  &_primary
+    color: $color-light
+    border: 3px solid $color-light
+    min-width: 9.7778rem
+    padding: .7rem .5rem .5rem
+    letter-spacing: .8px
+    &:hover
+      background-color: $color-light
+      color: $color-secondary
+    @media screen and (max-width: $desktop)
+      border: 1px solid $color-light
+  &_secondary
+    text-align: center
+    text-transform: uppercase
+    border: 1px solid $color-accent-light
+    color: $color-accent-light
+    min-width: 19rem
+    padding: .7rem 1rem
+    &:hover
+      background-color: $color-accent-light
+      color: $color-secondary
+  &_more
+    font-family: 'Playfair Display'
+    font-weight: 700
+    font-size: 1.1111rem
+    color: $color-accent
+    position: relative
+    text-transform: uppercase
+    padding: 1.1rem 4.8rem 1.9rem .5rem
+    &::before, &::after
+      content: ''
+      position: absolute
+    &::before
+      border: 2px solid $color-accent
+      width: 10rem
+      height: 4.55rem
+      top: -0.05rem
+      left: 2rem
+      z-index: -1
+    &::after
+      background-image: url(../img/arrow.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      display: block
+      width: 2.1rem
+      height: 1rem
+      left: 3rem
+      bottom: .65rem
+    span
+      background-color: $color-light
+      z-index: 1
+      padding-bottom: .8rem
+    &:hover::after
+      animation: move 0.9s infinite
+    @media screen and (max-width: $desktop)
+      &::before
+        border: 1px solid $color-accent
+    @media screen and (max-width: $mobile)
+      font-size: 1.3rem

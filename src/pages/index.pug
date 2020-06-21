@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/style.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap")
+    title Document
+  body
+    include sections/header
+    include sections/map
+    include sections/featured
+    .wrapper
+      .wrapper__left
+        include sections/benefits
+      .wrapper__right
+        include sections/about
+      img.wrapper__stars(src="./img/stars.png", alt="stars")

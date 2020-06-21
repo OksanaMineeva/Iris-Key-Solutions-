@@ -1,0 +1,36 @@
+.featured
+  position: relative
+  text-align: center
+  padding-top: 14.5rem
+  margin-top: -9rem
+  background: linear-gradient(180deg, $color-secondary 0%, rgba(118, 107, 175, 0) 37.79%)
+  @media screen and (max-width: $tablet)
+    margin-bottom: 7rem
+  @media screen and (max-width: $mobile)
+    margin-top: -11rem
+  &__quote
+    margin-bottom: 4rem
+  &__main
+    display: flex
+    padding-left: 8.4rem
+    text-align: left
+    @media screen and (max-width: $mobile)
+      flex-flow: column-reverse
+      padding-left: 4rem
+      padding-right: 4rem
+
+  &__left
+    flex: 1 0 38%
+    margin-top: 3.5rem
+  &__right
+    flex: 1 0 62%
+    padding-right: 0.4rem
+    @media screen and (max-width: $mobile)
+      max-width: 70%
+      align-self: center
+  &__title
+    margin-bottom: 4rem
+    margin-left: 1.1rem
+  &__specifications
+    margin-bottom: 7.5rem
+    margin-left: 1.1rem

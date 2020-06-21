@@ -1,0 +1,23 @@
+mixin social(url, icon)
+  li.socials__item
+    a.socials__link(href=url)
+      case icon
+        when 'facebook'
+          include ../icons/facebook.svg
+        when 'twitter'
+          include ../icons/twitter.svg
+        when 'linkedin'
+          include ../icons/linkedin.svg
+        when 'instagram'
+          include ../icons/instagram.svg
+        when 'google-plus'
+          include ../icons/google-plus.svg
+
+
+
+ul.socials
+  +social('#', 'facebook')
+  +social('#', 'twitter')
+  +social('#', 'linkedin')
+  +social('#', 'instagram')
+  +social('#', 'google-plus')

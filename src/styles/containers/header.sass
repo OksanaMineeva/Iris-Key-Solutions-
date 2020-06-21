@@ -1,0 +1,60 @@
+.header
+  background-image: url(../img/hero_top_bg.svg) 
+  background-position: 0 -11%
+  background-size: cover
+  background-repeat: no-repeat 
+  @media screen and (max-width: $tablet)
+    background-position: 0px -14%
+    background-size: 115%
+    background-position-x: 100%
+  @media screen and (max-width: $mobile)
+    background-position: 0px -55%
+  @media screen and (max-width: $mobile-mid)
+    background-position: 0px 80px
+  @media screen and (max-width: $mobile-small)
+    background-position: 0px -120%
+  &__top
+    display: flex
+    justify-content: space-between
+  &__left
+    margin-left: 1rem
+    @media screen and (max-width: $mobile)
+      margin-left: 0
+      position: absolute
+      top: 8rem
+  &__logo
+    width: 21.3888888889rem
+    @media screen and (max-width: $mobile)
+      width: 16rem
+  &__middle
+    display: flex
+    margin-top: 3.2rem
+    @media screen and (max-width: $mobile)
+      padding-left: 4rem
+  &__title
+    margin-right: 1.8rem
+    margin-left: .7rem
+  &__right
+    margin-right: 5.45rem
+    margin-top: 2.7rem
+    @media screen and (max-width: $tablet)
+      margin-right: 2rem
+  &__authorize
+    margin-bottom: 2.33rem
+  &__socials
+    margin-right: 2rem
+    @media screen and (max-width: $tablet)
+      margin-right: 0
+  &__main
+    text-align: center
+    margin-top: -9.2rem
+    padding-right: .3rem
+    padding-bottom: 4.1rem
+    @media screen and (max-width: $tablet)
+      margin-top: -7.2rem
+    @media screen and (max-width: $mobile)
+      margin-top: 6rem
+    .title
+      margin-bottom: 2.1rem
+    .btn
+      margin-left: 5rem

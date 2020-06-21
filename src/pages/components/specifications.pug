@@ -1,0 +1,13 @@
+mixin specification(title, text)
+  .specifications__item
+    .specifications__title=title
+    .specifications__text=text
+
+.specifications
+  .specifications__head Bert's Black Widow Harley-Davidson
+  +specification('Business category:', 'Auto/Motorcycles Sales')
+  +specification('Address:', '2224 El Jobean Road \nPort Charlotte, FL 33948')
+  +specification('Business description:', 'We are here to bring the sweetest rides on two wheels, Harley-Davidson® motorcycles, to Port Charlotte, in Southwest Florida.')
+  +specification('Contact:', '(941) 883-8000')
+  button.specifications__btn.btn.btn_more 
+    span Read more

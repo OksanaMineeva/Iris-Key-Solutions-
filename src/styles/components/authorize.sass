@@ -1,0 +1,18 @@
+.authorize
+  display: flex
+  justify-content: flex-end
+  &__link
+    display: block
+    border: 1px solid $color-accent
+    color: $color-accent
+    font-weight: 500
+    font-size: 1.1112rem
+    min-width: 6.223rem
+    text-align: center
+    padding: 0.4rem
+    &.is-active
+      background-color: $color-accent
+      color: $color-light
+    &:hover
+      background-color: transparentize($color-accent, .1) 
+      color: $color-light

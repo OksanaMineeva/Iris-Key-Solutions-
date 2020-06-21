@@ -1,0 +1,30 @@
+.specifications
+  color: #464069
+  &__head
+    font-family: 'Playfair Display'
+    font-weight: 700
+    font-size: 1.1111rem
+    line-height: 1.35
+    text-transform: uppercase
+    color: $color-accent
+    margin-bottom: 1.5rem
+    @media screen and (max-width: $mobile)
+      font-size: 2rem
+  &__item
+    display: flex
+    margin-bottom: .85rem
+  &__title
+    flex: 1 0 36%
+    @media screen and (max-width: $mobile)
+      font-size: 1.5rem
+  &__text
+    flex: 1 0 64%
+    white-space: pre-wrap
+    letter-spacing: .1px
+    @media screen and (max-width: $mobile)
+      font-size: 1.5rem
+  &__btn
+    margin-left: auto
+    margin-top: 4rem
+    margin-right: 1.15rem
+    display: block

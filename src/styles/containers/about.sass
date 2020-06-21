@@ -1,0 +1,49 @@
+.about
+  position: relative
+  padding-top: 14rem
+  padding-right: 7.7rem
+  @media screen and (max-width: $tablet)
+    padding-top: 8rem
+  @media screen and (max-width: $mobile)
+    padding-right: 4rem
+    margin-bottom: 6rem
+  &__stars
+    position: absolute
+    top: -1.5rem
+    right: 15rem
+    width: 16.3rem
+    @media screen and (max-width: $tablet)
+      right: 5rem
+    @media screen and (max-width: $mobile)
+      top: -6.5rem
+  &__logo
+    position: absolute
+    top: 7.1rem
+    width: 32rem
+    left: 11rem
+    @media screen and (max-width: $mobile)
+      width: 37rem
+      left: 8rem
+  &__title
+    text-align: right
+    font-size: 1.3rem
+    letter-spacing: .6px
+    margin-bottom: 2.1rem
+    margin-right: 1rem
+    &::before
+      right: -1.85rem
+      top: -2.6rem
+      width: 5.2rem
+      height: 5.2rem
+      left: unset
+    @media screen and (max-width: $mobile)
+      font-size: 2rem
+      margin-bottom: 6rem
+      &::before
+        top: -1.9rem
+  &__text
+    margin-left: 15rem
+    text-align: center
+    @media screen and (max-width: $mobile)
+      font-size: 1.5rem
+      margin-left: 3rem

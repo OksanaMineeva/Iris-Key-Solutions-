@@ -1,0 +1,9 @@
+mixin autorize(url, title, active)
+  li.authorize__item
+    a.authorize__link(href=url, class=active ? 'is-active' : '')=title
+
+
+
+ul.authorize
+  +autorize('#', 'JOIN', true)
+  +autorize('#', 'SIGN IN')
